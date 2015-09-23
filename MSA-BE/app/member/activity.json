@@ -1,0 +1,99 @@
+[
+	{
+		"lastOnlineLogin": 1441398747933,
+		"purchases": [
+			{
+				"activityId": "1234",
+				"timestamp": 1441398757933,
+				"productDetail": {
+					"partNum": "067VA69847512P",
+					"storeUnitNumber": "01213",
+					"storeFormat": "kmart",
+					"onlineFlag": false
+				}
+			}
+			,{
+				"activityId": "1234",
+				"timestamp": 1440298747933,
+				"productDetail": {
+					"partNum": "067VA69847512P",
+					"storeUnitNumber": "01213",
+					"storeFormat": "kmart",
+					"onlineFlag": false
+				}
+			}
+			,{
+				"activityId": "1234",
+				"timestamp": 1440198747233,
+				"productDetail": {
+					"partNum": "067VA69847512P",
+					"storeUnitNumber": "01213",
+					"storeFormat": "kmart",
+					"onlineFlag": false
+				}
+			}
+			,{
+				"activityId": "1234",
+				"timestamp": 1421398747933,
+				"productDetail": {
+					"partNum": "067VA69847512P",
+					"storeUnitNumber": "01213",
+					"storeFormat": "kmart",
+					"onlineFlag": false
+				}
+			}
+			,{
+				"activityId": "1234",
+				"timestamp": 1419398747933,
+				"productDetail": {
+					"partNum": "067VA69847512P",
+					"storeUnitNumber": "01213",
+					"storeFormat": "kmart",
+					"onlineFlag": false
+				}
+			}
+			,{
+				"activityId": "1234",
+				"timestamp": 1101398767233,
+				"productDetail": {
+					"partNum": "067VA69847512P",
+					"storeUnitNumber": "01213",
+					"storeFormat": "kmart",
+					"onlineFlag": false
+				}
+			}
+		],
+		"returns": [
+			{
+				"activityId": "1234",
+				"timestamp": 1431398747933,
+				"productDetail": {
+					"partNum": "067VA69847512P",
+					"storeUnitNumber": "01213",
+					"storeFormat": "kmart",
+					"onlineFlag": false
+				}
+			}
+			,{
+				"activityId": "1234",
+				"timestamp": 1441395647933,
+				"productDetail": {
+					"partNum": "067VA69847512P",
+					"storeUnitNumber": "01213",
+					"storeFormat": "kmart",
+					"onlineFlag": false
+				}
+			}
+			,{
+				"activityId": "1234",
+				"timestamp": 1441398747933,
+				"productDetail": {
+					"partNum": "067VA69847512P",
+					"storeUnitNumber": "01213",
+					"storeFormat": "kmart",
+					"onlineFlag": false
+				}
+			}
+		]
+	}
+]

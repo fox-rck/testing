@@ -1,0 +1,25 @@
+{
+  "name": "KMART_MSA",
+  "version": "4.0.0",
+  "description": "This is the Kmart MSA Application",
+  "main": "index.js",
+  "author": "IMX",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "busboy": "0.2.9",
+    "express": "4.13.3",
+    "flux": "^2.0.1",
+    "jsx-loader": "^0.13.2",
+    "moment": "^2.10.6",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "serve-static": "^1.10.0",
+    "underscore": "^1.8.3",
+    "webpack": "^1.12.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

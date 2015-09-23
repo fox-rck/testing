@@ -1,0 +1,50 @@
+[
+	{
+		"oppId": "1234",
+		"oppTimestamp": 1441398747933,
+		"department": "Baby",
+		"purchases": {
+			"lastPurchaseDate": "09/30/2015"
+		}
+	},
+	{
+		"oppId": "1235",
+		"oppTimestamp": 1441398747933,
+		"department": "Pharmacy",
+		"purchases": {
+			"lastPurchaseDate": "09/28/2015"
+		}
+	},
+	{
+		"oppId": "1236",
+		"oppTimestamp": 1441398747933,
+		"department": "Beauty",
+		"purchases": {
+			"lastPurchaseDate": "09/14/2015"
+		}
+	},
+	{
+		"oppId": "1237",
+		"oppTimestamp": 1441398747933,
+		"department": "Lawn & Garden",
+		"purchases": {
+			"lastPurchaseDate": "09/02/2015"
+		}
+	},
+	{
+		"oppId": "1238",
+		"oppTimestamp": 1441398747933,
+		"department": "Pets",
+		"purchases": {
+			"lastPurchaseDate": "07/01/2014"
+		}
+	},
+	{
+		"oppId": "1239",
+		"oppTimestamp": 1441398747933,
+		"department": "Automotive",
+		"purchases": {
+			"lastPurchaseDate": "02/16/2010"
+		}
+	}
+]

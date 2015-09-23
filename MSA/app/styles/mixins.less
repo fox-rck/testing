@@ -1,0 +1,24 @@
+
+.form-input() {
+	font-family: @siteFont;
+	@formElmHeight : 40px;
+	margin-bottom: 25px;
+	font-size: 18px;
+	border:none; border-bottom: 1px solid #000;
+	color: #000;
+}
+.default-button() {
+	font-family: @siteFont;
+	@formElmHeight : @defBtnHeight;
+	@formElmWidth: @defBtnWidth;
+	background: @defBtnBack; border: none; border-radius: @defBtnRadius; width: @formElmWidth; line-height: @formElmHeight /2; height: @formElmHeight !important; text-transform: uppercase; color: @defBtnColor; font-size: @defBtnFontSize;
+	 &:hover { color: @defBtnHoverColor; background: @defBtnBackHover; }
+}
+
+.more-button() {
+	font-family: @siteFont;
+	@formElmHeight : 45px;
+	@formElmWidth: @defBtnWidth;
+	background: #000; line-height: @formElmHeight /2; height: @formElmHeight !important; text-transform: uppercase; color: #fff; font-size: @defBtnFontSize; padding: 5px 25px; 
+	 &:hover {  background: @primary; }
+}
