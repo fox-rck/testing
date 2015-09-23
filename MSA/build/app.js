@@ -26005,7 +26005,7 @@
 	/** @jsx React.DOM */module.exports = {
 		api_domain: "http://52.25.109.87"
 		, api_version:"/api/v1"
-	}
+	}	
 
 /***/ },
 /* 210 */
@@ -38418,7 +38418,7 @@
 		var showMore = this.showMore()? React.createElement("button", {className: "full-width", onClick: this.toggleCollectionSize}, 
 			this.getViewVerbiage()
 		) : "";
-		return React.createElement("div", {className: ""}, 
+		return React.createElement("div", {className: "recent-activity"}, 
 			React.createElement("h2", null, "Recent Activity"), 
 			loading, 
 			React.createElement("ul", {className: "select-list"}, 

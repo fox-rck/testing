@@ -87,7 +87,7 @@ getInitialState: function() {
 	var showMore = this.showMore()? <button className="full-width" onClick={this.toggleCollectionSize}>
 		{this.getViewVerbiage()}
 	</button> : "";
-	return <div className="">
+	return <div className="recent-activity">
 		<h2>Recent Activity</h2>
 		{loading}
 		<ul className="select-list">
