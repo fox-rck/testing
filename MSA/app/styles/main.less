@@ -26,7 +26,7 @@ header { height: @headerHeight; background: #888b8d; position: fixed; top: 0; le
 .login-wrapper { max-width: 96%; width: 300px; margin: 0 auto; text-align: center;
 	input { .form-input(); }
 	button { .default-button(); }
-	.login-logo { height: 75px; width: 75px; display: block; margin: 50px auto; }
+	.login-logo { height: 122px; width: 128px; display: block; margin: 50px auto; }
 }
 .list-heading { text-align: left; overflow: hidden; clear: both; position: relative; padding: 7px;
 	.rank { width: 60px; display: block; float: left; text-align: center; }
@@ -60,7 +60,9 @@ header { height: @headerHeight; background: #888b8d; position: fixed; top: 0; le
 	}
 }
 .member-profile-info {
-	.user-info { float: left; }
+	.user-info { float: left;
+		h2 { color: @primary; }
+	 }
 }
 .search-member-wrapper { 
 	@imgHeight: 196px;
@@ -86,10 +88,12 @@ header { height: @headerHeight; background: #888b8d; position: fixed; top: 0; le
 
 }
 .department-list { 
-	.list{ margin: 20px 0; }
+	.list{ margin: 10px 0;
+		button { min-height: 45px; }
+	 }
 }
-.category-list { text-align: left; margin-left: 5%; 
-	button { width: 90%; font-size: 1rem; height: 25px; border: none; }
+.category-list { text-align: left; margin-left: 61px; 
+	button { width: 100%; font-size: 1rem; height: 25px; border: none; }
 	
 }
 .icon-chevron-right, .icon-plus, .icon-minus { position: absolute; top: 50%; right: 5px; transform: translateY(-50%); font-size: 34px; }
@@ -132,7 +136,10 @@ li { list-style: none; padding: 0; }
     clear: both;
   }
 }
-.more-cats { .more-button(); margin-top: 15px; font-weight: 700; }
+.more-cats { .more-button(); margin-top: 15px; font-weight: 700; width: 260px; }
+.feedback { .more-button(); margin-top: 15px; font-weight: 700; width: 260px;  background: none; border: 1px solid @defBtnBack; color: @defBtnBack; display: inline-block; text-decoration: none;
+	&:hover {  border: 1px solid #000; }
+}
 .syw { color: orange; }
 .gold { color: @gold; }
 .silver { color: @silver; }

@@ -26598,13 +26598,13 @@
 				member !== null ? React.createElement("span", null, React.createElement("i", {className: "icon-arrow-left"}), " Results"): ""
 			) : ""
 		return React.createElement("div", {id: "member-details"}, 
-			React.createElement("div", {className: "text-center"}, 
-				React.createElement("a", {href: "javascript;", onClick: this.sendFeedback}, "SEND FEEDBACK REQUEST")
-			), 
 			React.createElement("div", null, 
 				results, 
 				React.createElement(MemberProfileDetails, React.__spread({},  this.props, {member: member})), 
 				React.createElement(RankedCategories, React.__spread({},  this.props, {member: member, opps: this.state.store.opportunities, loading: this.state.store.opportunitiesLoading})), 
+				React.createElement("div", {className: "text-center"}, 
+					React.createElement("button", {className: "feedback", onClick: this.sendFeedback}, "SEND FEEDBACK SURVEY")
+				), 
 				React.createElement("br", null), 
 				React.createElement(RecentActivity, React.__spread({},  this.props, {member: member, acts: this.state.store.activities, loading: this.state.store.activitiesLoading}))
 			)
@@ -26648,7 +26648,7 @@
 		), 
 		React.createElement("div", {className: "user-info"}, 
 			React.createElement("h2", null, member.firstName, " ", member.lastName), 
-			React.createElement("p", null, "ShopYourWay # ", member.memberNumber)
+			React.createElement("p", null, "ShopYourWay # ", member.memberNumber.substring(0,4))
 		)
 	) : "Member not found"
 	return React.createElement("div", null, info)
@@ -26769,7 +26769,6 @@
 			loading, 
 			React.createElement("div", {className: "list-heading"}, 
 				React.createElement("strong", null, 
-					React.createElement("span", {className: "rank"}, "RANK"), 
 					"DEPARTMENT"
 				)
 			), 
@@ -38306,12 +38305,11 @@
 	}
 	, goToNextScreen: function(id) {
 		//TODO: this is for demo only, will not be used in live app
-		document.location = "/#/user/"+this.props.params.userId+"/member/"+this.props.params.memberId+"/category/"+id;
+		//document.location = "/#/user/"+this.props.params.userId+"/member/"+this.props.params.memberId+"/category/"+id;
 	}
 	, render: function() {
 		var loading = this.props.loading? "Loading..." : "";
 		var list = this.state.cats !== null && this.props.cat.isOpened === true ? React.createElement("div", {className: "list"}, 
-		React.createElement("h4", null, "CATEGORIES"), 
 		this.state.cats.map(function(cat) 
 			{return React.createElement("div", null, 
 				React.createElement("button", {onClick: this.goToNextScreen.bind(this, this.props.cat.oppId)}, cat.name)
@@ -38562,7 +38560,7 @@
 		return React.createElement("div", {id: "login"}, loading, 
 			React.createElement(Header, React.__spread({},  this.props, {title: "Employee Login"})), 
 			React.createElement("div", {className: "login-wrapper page-wrapper"}, 
-				React.createElement("img", {className: "login-logo", height: "75", width: "75", src: "images/logo-1.jpg"}), 
+				React.createElement("img", {className: "login-logo", height: "75", width: "75", src: "images/logo-2.png"}), 
 				error, req, 
 				React.createElement("input", {className: "full-width", ref: "UN", type: "text", placeholder: "Enterprise Id"}), 
 				React.createElement("input", {className: "full-width", ref: "PW", type: "text", placeholder: "Enterprise Password"}), 

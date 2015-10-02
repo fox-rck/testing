@@ -52,7 +52,7 @@ mixins:[storeMixin(AuthStore)]
 	return <div id="login">{loading}
 		<Header {...this.props} title={"Employee Login"} />
 		<div className="login-wrapper page-wrapper">
-			<img className="login-logo" height="75" width="75" src="images/logo-1.jpg" />
+			<img className="login-logo" height="75" width="75" src="images/logo-2.png" />
 			{error}{req}
 			<input className="full-width" ref="UN" type="text" placeholder="Enterprise Id" />
 			<input className="full-width" ref="PW"  type="text" placeholder="Enterprise Password" />

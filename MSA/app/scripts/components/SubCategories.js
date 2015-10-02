@@ -59,12 +59,11 @@ getInitialState: function() {
 }
 , goToNextScreen: function(id) {
 	//TODO: this is for demo only, will not be used in live app
-	document.location = "/#/user/"+this.props.params.userId+"/member/"+this.props.params.memberId+"/category/"+id;
+	//document.location = "/#/user/"+this.props.params.userId+"/member/"+this.props.params.memberId+"/category/"+id;
 }
 , render: function() {
 	var loading = this.props.loading? "Loading..." : "";
 	var list = this.state.cats !== null && this.props.cat.isOpened === true ? <div className="list">
-	<h4>CATEGORIES</h4>
 	{this.state.cats.map((cat) =>
 		<div>
 			<button onClick={this.goToNextScreen.bind(this, this.props.cat.oppId)} >{cat.name}</button>

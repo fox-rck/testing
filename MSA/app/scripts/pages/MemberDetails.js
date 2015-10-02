@@ -58,13 +58,13 @@ mixins:[storeMixin(MemberStore)]
 			{member !== null ? <span><i className="icon-arrow-left" /> Results</span>: ""}
 		</button> : ""
 	return <div id="member-details">
-		<div className="text-center">
-			<a href="javascript;" onClick={this.sendFeedback}>SEND FEEDBACK REQUEST</a>
-		</div>
 		<div>
 			{results}
 			<MemberProfileDetails {...this.props} member={member} />
 			<RankedCategories {...this.props} member={member} opps={this.state.store.opportunities} loading={this.state.store.opportunitiesLoading}/>
+			<div className="text-center">
+				<button className="feedback" onClick={this.sendFeedback}>SEND FEEDBACK SURVEY</button>
+			</div>
 			<br />
 			<RecentActivity {...this.props} member={member} acts={this.state.store.activities} loading={this.state.store.activitiesLoading}/>
 		</div>

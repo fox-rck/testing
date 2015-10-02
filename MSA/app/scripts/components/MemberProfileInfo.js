@@ -30,7 +30,7 @@ getInitialState: function() {
 	</div>
 	<div className="user-info">
 		<h2>{member.firstName} {member.lastName}</h2>
-		<p>ShopYourWay # {member.memberNumber}</p>
+		<p>ShopYourWay # {member.memberNumber.substring(0,4)}</p>
 	</div>
 </div> : "Member not found"
 return <div>{info}</div>

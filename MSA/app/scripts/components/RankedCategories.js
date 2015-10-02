@@ -108,7 +108,6 @@ getInitialState: function() {
 		{loading}
 		<div className="list-heading">
 			<strong>
-				<span className="rank">RANK</span>
 				DEPARTMENT
 			</strong>
 		</div>
