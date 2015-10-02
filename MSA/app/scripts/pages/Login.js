@@ -45,7 +45,7 @@ mixins:[storeMixin(AuthStore)]
 	}
 }
 , render: function() {
-	console.log(this.props)
+	<img className="pre-load" src="/images/spinner.gif" />
 	var loading = this.state.store.loading ? <Loader /> : "";
 	var error = this.state.store.error ? <div className="error">We could not authenticate you with the provided credentials</div>: "";
 	var req = this.state.required ? <div className="error">An Enterprise Id and Password are required</div> : "";
