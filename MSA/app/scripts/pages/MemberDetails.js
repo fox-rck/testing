@@ -4,6 +4,7 @@ var RouteHandler = Router.RouteHandler;
 var MemberProfileDetails = require('../components/MemberProfileInfo');
 var memberActions = require('../actions/Member');
 var RankedCategories = require('../components/RankedCategories');
+var Feedback = require('../components/Feedback');
 var RecentActivity = require('../components/RecentActivity');
 var storeMixin = require('../shared/storeMixin');
 var memberHelpers = require('../shared/memberHelpers');
@@ -13,7 +14,8 @@ mixins:[storeMixin(MemberStore)]
 , getInitialState: function() {
 	return {
 		scanCard: false,
-		store: MemberStore.getState()
+		store: MemberStore.getState(),
+		showFeedback : false
 	};
 }
 ,  getInitDataIfNeeded: function() {
@@ -48,15 +50,15 @@ mixins:[storeMixin(MemberStore)]
 
 }
 , sendFeedback: function(e) {
-	e.preventDefault();
-	alert("Your feedback request has been sent");
+	this.setState({showFeedback: !this.state.showFeedback})
 }
 , render: function() {
 	var member = this.getSelectedMember(this.props.params.memberId);
 	var memberCount = MemberStore.getState().members !== null ? MemberStore.getState().members.length : 0;
 	var results = memberCount > 1 ? <button className="back-button" onClick={this.goBack}>
 			{member !== null ? <span><i className="icon-arrow-left" /> Results</span>: ""}
-		</button> : ""
+		</button> : "";
+	var feedbackPop = this.state.showFeedback ? <Feedback {...this.props} back={this.sendFeedback}/> : "";
 	return <div id="member-details">
 		<div>
 			{results}
@@ -68,6 +70,7 @@ mixins:[storeMixin(MemberStore)]
 			<br />
 			<RecentActivity {...this.props} member={member} acts={this.state.store.activities} loading={this.state.store.activitiesLoading}/>
 		</div>
+		{feedbackPop}
 	</div>
 }
 });

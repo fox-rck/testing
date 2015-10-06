@@ -48,15 +48,15 @@ mixins:[storeMixin(AuthStore)]
 	<img className="pre-load" src="/images/spinner.gif" />
 	var loading = this.state.store.loading ? <Loader /> : "";
 	var error = this.state.store.error ? <div className="error">We could not authenticate you with the provided credentials</div>: "";
-	var req = this.state.required ? <div className="error">An Enterprise Id and Password are required</div> : "";
+	var req = this.state.required ? <div className="error">A Username and Password are required</div> : "";
 	return <div id="login">{loading}
 		<Header {...this.props} title={"Employee Login"} />
 		<div className="login-wrapper page-wrapper">
 			<img className="login-logo" height="75" width="75" src="images/logo-2.png" />
 			{error}{req}
-			<input className="full-width" ref="UN" type="text" placeholder="Enterprise Id" />
-			<input className="full-width" ref="PW"  type="text" placeholder="Enterprise Password" />
-			<button className="" onClick={this.authenticate}>Submit</button>
+			<input className="full-width" ref="UN" type="text" placeholder="Username" />
+			<input className="full-width" ref="PW"  type="password" placeholder="Password" />
+			<button className="" onClick={this.authenticate}>Login</button>
 		</div>
 	</div>
 }

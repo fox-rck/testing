@@ -84,7 +84,7 @@ mixins:[storeMixin(MemberStore)]
 			<input className="full-width search-term" ref="term" type="text" placeholder="Enter Phone #, Name or SYW #" />
 			<button className="" onClick={this.searchMembers}>Search</button>
 			<div className="divider" />
-			<p className="heading">Tap below to scan <br/><strong className="syw">ShopYourWay</strong> 	code</p>
+			<p className="heading">Tap below to scan <strong className="syw">ShopYourWay</strong> 	code</p>
 			<button className="" onClick={this.toggleScanCard}> Scan Code</button>
 		</form> 
 	</div> : <div>

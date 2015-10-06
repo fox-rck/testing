@@ -104,7 +104,7 @@ getInitialState: function() {
 		{this.getViewVerbiage()}
 	</button> : "";
 	return <div className="department-list">
-		<h2>OPPORTUNITIES</h2>
+		<h2>Opportunities</h2>
 		{loading}
 		<div className="list-heading">
 			<strong>

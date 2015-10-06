@@ -18,7 +18,7 @@ getInitialState: function(){
 }
 
 , goToLogin: function(id) {
-		document.location = "/#/login";
+		document.location = "/msa/#/login";
 }
 , componentWillReceiveProps: function(nextProps){
 	var curUsr = this.state.curUser;

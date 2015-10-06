@@ -63,7 +63,6 @@ mixins:[storeMixin(MemberStore)]
 						)}
 						<li>{user.address1} {user.address2}</li>
 						<li>{user.city}, {user.state} {user.zipCode}</li>
-						<li>[SYW Info]</li>
 					</ul>
 					<span className="next">VIEW</span>
 				</div>
@@ -71,8 +70,7 @@ mixins:[storeMixin(MemberStore)]
 		</li>
 	) : "No members found"
 	return  <div className="member-select">
-		<h2>Search Results</h2>
-		<h3>{this.state.store.members?this.state.store.members.length:0} Results for <strong>'{this.props.params.term}'</strong></h3>
+		<h3>{this.state.store.members?this.state.store.members.length:0} results for <strong>'{this.props.params.term}'</strong></h3>
 		<ul className="select-list">
 			{list}
 		</ul>

@@ -90,13 +90,6 @@ getInitialState: function() {
 	return <div className="recent-activity">
 		<h2>Recent Activity</h2>
 		{loading}
-		<ul className="select-list">
-		Purchases:
-			{list}
-		Returns:
-			{retList}
-		</ul>
-		
 </div>
 }
 });

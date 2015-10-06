@@ -22,7 +22,7 @@ mixins:[storeMixin(AuthStore)]
 , componentDidMount: function() {
 	console.log(this.props);
 	if (this.state.store.profile == null) {
-		window.location = "/#/login";
+		window.location = "/msa/#/login";
 	}
 }
 , setPageTitle: function(title){
